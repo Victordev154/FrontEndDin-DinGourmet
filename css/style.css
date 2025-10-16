@@ -1,0 +1,297 @@
+/* ------------------------------------------- */
+/* CSS BASE E RESET (Para consistência) */
+/* ------------------------------------------- */
+
+* {
+    /* Remove margens e preenchimentos padrão do navegador */
+    margin: 0;
+    padding: 0;
+    /* Define o box-sizing para facilitar o cálculo de tamanhos */
+    box-sizing: border-box; 
+}
+
+body {
+    /* Define as fontes que importamos no HTML */
+    font-family: 'Roboto', sans-serif; 
+    line-height: 1.6; 
+    background-color: #F5F5F5; /* Cor de fundo neutra do Figma */
+}
+
+/* Estilo básico para links */
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+/* Estilo para a logo/títulos */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif; 
+}
+
+/* ------------------------------------------- */
+/* ESTILIZAÇÃO DO CABEÇALHO E NAVEGAÇÃO */
+/* CORREÇÕES PARA CENTRALIZAÇÃO E LAYOUT MOBILE */
+/* ------------------------------------------- */
+
+.cabecalho {
+    background-color: #FFFFFF; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 15px 20px;
+    
+    /* CORREÇÃO: Coloca a logo e o menu um embaixo do outro e centraliza */
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+/* Estilo para a Imagem da Logo */
+.cabecalho .logo img {
+    max-width: 120px; 
+    height: auto;
+    margin-bottom: 10px; /* Espaço entre a Logo e o Menu */
+}
+
+/* Estilo para o Menu de Navegação */
+.menu-principal {
+    width: 100%; 
+    text-align: center;
+}
+
+.menu-principal ul {
+    list-style: none;
+    display: flex; 
+    /* CORREÇÃO: Centraliza os links HOME/CARDAPIO/CONTATO */
+    justify-content: center; 
+    gap: 20px; 
+}
+
+/* Estiliza os links do menu */
+.menu-principal a {
+    color: #212121; 
+    padding: 5px 10px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+/* Estiliza o link ativo (onde o usuário está) */
+.menu-principal a.ativo {
+    color: #4DD0E1; /* Turquesa de destaque */
+    border-bottom: 2px solid #4DD0E1; 
+}
+
+/* ------------------------------------------- */
+/* ESTILIZAÇÃO DA HERO SECTION (DESTAQUE PRINCIPAL) */
+/* ------------------------------------------- */
+
+.hero {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+}
+
+/* Bloco da Imagem de Fundo (A hero image) */
+.hero-imagem-fundo {
+    width: 100%;
+    height: 300px; /* Altura da imagem no Mobile */
+    /* Lembre-se de colocar sua imagem na pasta img/ e renomear o arquivo */
+    background-image: url('../img/dindin-principal.jpg'); 
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0; /* Remove margem desnecessária, o CTA fica logo abaixo */
+}
+
+/* Conteúdo (Slogan e CTA) que fica embaixo da imagem */
+.hero-conteudo {
+    padding: 20px 20px 40px; 
+    max-width: 600px;
+    width: 100%;
+}
+
+.hero-conteudo h1 {
+    font-size: 2.2em;
+    color: #212121;
+    margin-bottom: 25px; /* Espaço entre o Slogan e o CTA */
+}
+
+/* Botão CTA Amarelo (Chamada para Ação) */
+.botao-cta {
+    display: inline-block;
+    background-color: #FFC107; /* Cor Primária do Figma! */
+    color: #212121;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 50px; 
+    transition: background-color 0.3s;
+}
+
+.botao-cta:hover {
+    background-color: #4DD0E1; /* Efeito de hover */
+}
+/* ------------------------------------------- */
+/* ESTILIZAÇÃO DA HERO SECTION (DESTAQUE PRINCIPAL) */
+/* (A regra .hero-imagem-fundo original pode ser removida ou ignorada) */
+/* ------------------------------------------- */
+
+/* Estiliza o bloco que contém a imagem principal */
+.hero-imagem-principal {
+    margin: 20px 0; /* Espaço entre o Slogan e o CTA */
+}
+
+.hero-imagem-principal img {
+    max-width: 80%; /* Limita o tamanho da imagem para caber bem no mobile */
+    height: auto;
+    border-radius: 10px; /* Adiciona cantos arredondados se você fez isso no Figma */
+}
+
+/* O CTA já está centralizado (text-align: center) e deve estar em baixo */
+
+/* ------------------------------------------- */
+/* ESTILIZAÇÃO DOS DIFERENCIAIS (3 ÍTENS) */
+/* ------------------------------------------- */
+.diferenciais {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #FFFFFF; 
+}
+
+.diferenciais h2 {
+    color: #4DD0E1; /* Turquesa no título da seção */
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+.lista-diferenciais {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.item-diferencial {
+    max-width: 180px;
+}
+
+.item-diferencial h3 {
+    font-size: 1.1em;
+    color: #212121;
+    margin-top: 10px;
+}
+
+/* ------------------------------------------- */
+/* ESTILIZAÇÃO DA SEÇÃO MAIS PEDIDOS!!! */
+/* ------------------------------------------- */
+
+.mais-pedidos {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.mais-pedidos h2 {
+    color: #212121;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+.lista-pedidos {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    gap: 20px; /* Espaçamento entre os itens */
+    margin-bottom: 30px;
+}
+
+.item-pedido {
+    max-width: 150px;
+    text-align: center;
+}
+
+.item-pedido img {
+    width: 100%;
+    height: 120px; /* Altura fixa para as miniaturas */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    border-radius: 50%; /* Faz a imagem ficar redonda (como na sua imagem de referência) */
+    margin-bottom: 10px;
+}
+
+.item-pedido .nome-sabor {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #212121;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.item-pedido .preco {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #FFC107; /* Cor Amarela de Destaque */
+}
+
+/* Estilo para um CTA secundário, se você usá-lo */
+.botao-cta-secundario {
+    display: inline-block;
+    color: #4DD0E1; 
+    font-weight: 700;
+    font-size: 1em;
+    margin-top: 20px;
+    border-bottom: 2px solid #4DD0E1;
+}
+
+/* ------------------------------------------- */
+/* ESTILIZAÇÃO DO RODAPÉ (FOOTER) */
+/* ------------------------------------------- */
+
+footer {
+    background-color: #212121; 
+    color: #F5F5F5; 
+    padding: 30px 20px;
+    margin-top: 40px; 
+}
+
+.rodape-conteudo {
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto; 
+}
+
+.rodape-conteudo h3 {
+    color: #FFC107; /* Destaque em Amarelo para os títulos */
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* Estilo para o CTA (link de contato) no rodapé */
+.rodape-cta {
+    display: inline-block;
+    color: #4DD0E1; 
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.rodape-social a {
+    display: block; 
+    color: #4DD0E1;
+    margin-bottom: 5px;
+}
+
+.rodape-social .copyright {
+    margin-top: 15px;
+    font-size: 0.8em;
+    color: #AAAAAA;
+}
+
+/* ------------------------------------------- */
+/* ESTILIZAÇÃO PARA TELAS MAIORES (OPCIONAL) */
+/* ------------------------------------------- */
+@media (min-width: 768px) {
+    .rodape-conteudo {
+        flex-direction: row; 
+        justify-content: space-between; 
+        text-align: left;
+    }
+}
