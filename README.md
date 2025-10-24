@@ -66,4 +66,4 @@ img (Imagens do produto, logo)
 * **[15/10/2025]** Criação da estrutura de pastas e arquivos no VS Code.
  Desenvolvi o esqueleto HTML semântico (`index.html`, `cardapio.html`, `contato.html`)
  Criei o arquivo `css/style.css` e repliquei o estilo do Figma.
- Inicializei o Git e fazer o primeiro commit no GitHub
+ Inicializei o Git e fazer o primeiro commit no GitHub 

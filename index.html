@@ -12,7 +12,10 @@
 <body>
 
     <header class="cabecalho">
-
+        <div class="logo">
+            <img src="img/imagemdindindamarcia.png" alt="Logo Din Din Gourmet da Marcia">
+        </div>
+        
         <nav class="menu-principal">
             <ul>
                 <li><a href="index.html" class="ativo">Home</a></li>
@@ -24,20 +27,20 @@
 
     <main>
         <section class="hero">
-        <div class="hero-conteudo">
-            
-            <h1>O Sabor Refrescante do Verão em Cada Mordida!</h1>
-            
-            <div class="hero-imagem-principal">
-                <img src="img/imagemdindindamarcia.png" alt="Din Din Gourmet da Marcia Imagem da logo Principal"> 
+            <div class="hero-conteudo">
+                
+                <h1 id="slogan-principal">O Sabor Refrescante do Verão em Cada Mordida!</h1>
+                
+                <div class="hero-imagem-principal">
+                    <img src="img/imagemdindindamarcia.png" alt="Din Din Gourmet da Marcia Imagem Principal"> 
+                </div>
+                
+                <a href="contato.html" class="botao-cta" id="botao-pedido">
+                    PEÇA AGORA VIA WHATSAPP!
+                </a>
+                
             </div>
             
-            <a href="contato.html" class="botao-cta">
-                PEÇA AGORA VIA WHATSAPP!
-            </a>
-            
-        </div>
-        
         </section>
         <section class="mais-pedidos">
         <h2>MAIS PEDIDOS!!!</h2>
@@ -45,19 +48,19 @@
         <div class="lista-pedidos">
             
             <div class="item-pedido">
-            <img src="img\dindinninhocomnutella.jpeg" alt="Din Din Ninho com Nutella">
+                <img src="img/dindinninhocomnutella.jpeg" alt="Din Din de Ninho com Nutella" class="foto-sabor">
                 <p class="nome-sabor">ninho c/ nutella</p>
                 <p class="preco">R$ 7,50</p>
             </div>
             
             <div class="item-pedido">
-                <img src="img\dindinmaracuja.jpeg" alt="Din Din de Maracujá">
+                <img src="img/dindinmaracuja.jpeg" alt="Din Din de Maracujá" class="foto-sabor">
                 <p class="nome-sabor">maracujá</p>
                 <p class="preco">R$ 5,50</p>
             </div>
             
             <div class="item-pedido">
-                <img src="img\didinfrutasvermelhas.jpeg" alt="Din Din de Frutas Vermelhas">
+                <img src="img/didinfrutasvermelhas.jpeg" alt="Din Din de Frutas Vermelhas" class="foto-sabor">
                 <p class="nome-sabor">frutas vermelhas</p>
                 <p class="preco">R$ 6,50</p>
             </div>
@@ -111,6 +114,46 @@
             
         </div>
     </footer>
+<script>
+    const botao = document.querySelector("#botao-pedido");
+    const slogan = document.querySelector("#slogan-principal");
 
+    botao.addEventListener('click', function(evento) {
+        
+        evento.preventDefault(); 
+        
+        // --- Interação do Primeiro Clique ---
+        slogan.innerHTML = "Excelente escolha! Seu pedido está a um passo!";
+        slogan.style.color = "#FFC107"; 
+        
+        // Remove o listener para que o PRÓXIMO clique funcione como um link normal
+        botao.removeEventListener('click', arguments.callee);
+        
+        setTimeout(function() {
+            slogan.style.color = "#212121"; 
+        }, 2000);
+    
+    });
+    // DESAFIO 3: Efeito ao Passar o Mouse (Mouse Over)
+
+    // Seleciona TODAS as imagens dos sabores na seção "Mais Pedidos!!!"
+    const imagens = document.querySelectorAll(".foto-sabor");
+
+    // Itera sobre cada imagem para adicionar os eventos
+    imagens.forEach(imagem => {
+        // Evento quando o mouse ENTRA na imagem
+        imagem.onmouseover = function() {
+            imagem.style.transform = "scale(1.05)"; // Aumenta o zoom em 5%
+            imagem.style.border = "3px solid #FFC107"; // Adiciona borda Amarela
+            imagem.style.cursor = "pointer"; // Muda o cursor para indicar interatividade
+        }
+
+        // Evento quando o mouse sai da imagem
+        imagem.onmouseout = function() {
+            imagem.style.transform = "scale(1)"; // Volta ao tamanho normal
+            imagem.style.border = "none"; // Remove a borda
+        }
+    });
+</script>
 </body>
 </html>

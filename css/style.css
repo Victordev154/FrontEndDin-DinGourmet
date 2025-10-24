@@ -509,3 +509,7 @@ footer {
     font-weight: 700;
     color: #212121;
 }
+/* Adiciona transição suave para o efeito de zoom do JavaScript */
+.foto-sabor {
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+}
