@@ -508,3 +508,70 @@ footer {
 #btnVoltarAoTopo:hover {
     background-color: #FFC107; /* Amarelo no hover */
 }
+
+/* NOVO: FORMULÁRIO DE DÚVIDAS (contato.html) */
+
+.formulario-duvidas {
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.formulario-duvidas h2 {
+    font-size: 1.4em;
+    color: #FFC107; /* Amarelo de destaque */
+    margin-bottom: 20px;
+}
+
+.formulario-contato label {
+    display: block; /* Cada label em uma nova linha */
+    text-align: left;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #212121;
+}
+
+.formulario-contato input[type="text"], 
+.formulario-contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+.formulario-contato textarea {
+    height: 100px;
+    resize: vertical; /* Permite redimensionar apenas verticalmente */
+}
+
+.botao-enviar {
+    background-color: #4DD0E1; /* Turquesa */
+    color: white;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.botao-enviar:hover {
+    background-color: #FFC107; /* Amarelo no hover */
+}
+
+/* Torna o foco visível para acessibilidade (ao navegar com a tecla TAB) */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus { /* Adicionado textarea para o formulário de Contato */
+    outline: 3px solid #4DD0E1; 
+    outline-offset: 2px;
+    border-radius: 5px; 
+}
