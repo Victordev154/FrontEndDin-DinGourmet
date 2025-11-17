@@ -605,3 +605,78 @@ textarea:focus { /* Adicionado textarea para o formulário de Contato */
     text-align: center;
     text-decoration: none;
 }
+/* Torna todas as imagens fluidas, garantindo que não quebrem o layout */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ajuda no alinhamento */
+}
+
+/* BREAKpoints TABLET (768px) */
+@media (min-width: 768px) {
+    
+    /*  Coloca a logo e o menu lado a lado */
+    .cabecalho {
+        flex-direction: row; /* Volta a alinhar logo e menu na mesma linha */
+        justify-content: space-between; /* Espaçamento entre logo e menu */
+        align-items: center;
+        padding: 15px 40px;
+        max-width: 1200px; /* Centraliza o conteudo geral */
+        margin: 0 auto;
+    }
+    
+    .menu-principal {
+        width: auto; /* Deixa o menu ocupar apenas o espaço necessário */
+        text-align: right;
+    }
+
+    /* Quebra de layout para duas colunas */
+    .lista-diferenciais {
+        justify-content: space-between;
+        gap: 30px;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .item-diferencial {
+        /* Permite que dois itens caibam em uma linha */
+        flex-basis: 45%; 
+    }
+
+    /* MAIS PEDIDOS: De 1 coluna para 3 colunas */
+    .lista-pedidos {
+        /* Transforma em 3 colunas, garantindo o mínimo de 250px por item */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+    }
+    
+}
+
+/* BREAKPOINT: DESKTOP (1024px) */
+
+@media (min-width: 1024px) {
+    
+    /* CONTEÚDO PRINCIPAL: Limita a largura para melhor leitura */
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+
+    /* SLOGAN Aumenta o tamanho da fonte para telas grandes */
+    .hero-conteudo h1 {
+        font-size: 3em; 
+    }
+    
+    /* MAIS PEDIDOS: Aumenta o espaço */
+    .mais-pedidos {
+        padding: 60px 0;
+    }
+
+    /* BOTÃO CTA: Torna o botão ainda maior */
+    .botao-cta {
+        font-size: 1.1em;
+        padding: 18px 40px;
+    }
+}
