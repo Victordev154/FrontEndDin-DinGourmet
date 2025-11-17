@@ -53,3 +53,6 @@ caso ele esteja em um computador fica bem mais simples de ir para o topo da tela
 
 4.2 (Testar Acessibilidade)
 Testei mover pelo site so com o teclado e deu certo, no teste de acessibilidade deu 92/100 , tudo certo ate então
+
+5.1. (Revisar Layout em Diferentes Telas)
+testei em várias telas e funcionou bem,nãoficou esteticamente bonito igual em uma tela grande mas em relação a funcionamento  ficou bom.
