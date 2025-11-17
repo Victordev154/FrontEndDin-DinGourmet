@@ -1,7 +1,3 @@
-/* ------------------------------------------- */
-/* CSS BASE E RESET (Para consistência) */
-/* ------------------------------------------- */
-
 * {
     /* Remove margens e preenchimentos padrão do navegador */
     margin: 0;
@@ -11,7 +7,7 @@
 }
 
 body {
-    /* Define as fontes que importamos no HTML */
+    /* Define as fontes importadas no HTML */
     font-family: 'Roboto', sans-serif; 
     line-height: 1.6; 
     background-color: #F5F5F5; /* Cor de fundo neutra do Figma */
@@ -28,17 +24,14 @@ h1, h2, h3 {
     font-family: 'Poppins', sans-serif; 
 }
 
-/* ------------------------------------------- */
 /* ESTILIZAÇÃO DO CABEÇALHO E NAVEGAÇÃO */
-/* CORREÇÕES PARA CENTRALIZAÇÃO E LAYOUT MOBILE */
-/* ------------------------------------------- */
 
 .cabecalho {
     background-color: #FFFFFF; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     padding: 15px 20px;
     
-    /* CORREÇÃO: Coloca a logo e o menu um embaixo do outro e centraliza */
+    /*  Coloca a logo e o menu um embaixo do outro e centraliza */
     display: flex;
     flex-direction: column; 
     align-items: center; 
@@ -60,7 +53,7 @@ h1, h2, h3 {
 .menu-principal ul {
     list-style: none;
     display: flex; 
-    /* CORREÇÃO: Centraliza os links HOME/CARDAPIO/CONTATO */
+   /* Centraliza os links HOME/CARDAPIO/CONTATO */
     justify-content: center; 
     gap: 20px; 
 }
@@ -79,9 +72,7 @@ h1, h2, h3 {
     border-bottom: 2px solid #4DD0E1; 
 }
 
-/* ------------------------------------------- */
 /* ESTILIZAÇÃO DA HERO SECTION (DESTAQUE PRINCIPAL) */
-/* ------------------------------------------- */
 
 .hero {
     display: flex;
@@ -94,7 +85,6 @@ h1, h2, h3 {
 .hero-imagem-fundo {
     width: 100%;
     height: 300px; /* Altura da imagem no Mobile */
-    /* Lembre-se de colocar sua imagem na pasta img/ e renomear o arquivo */
     background-image: url('../img/dindin-principal.jpg'); 
     background-size: cover;
     background-position: center;
@@ -117,7 +107,7 @@ h1, h2, h3 {
 /* Botão CTA Amarelo (Chamada para Ação) */
 .botao-cta {
     display: inline-block;
-    background-color: #FFC107; /* Cor Primária do Figma! */
+    background-color: #FFC107; /* Cor Primária do Figma*/
     color: #212121;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -129,10 +119,8 @@ h1, h2, h3 {
 .botao-cta:hover {
     background-color: #4DD0E1; /* Efeito de hover */
 }
-/* ------------------------------------------- */
+
 /* ESTILIZAÇÃO DA HERO SECTION (DESTAQUE PRINCIPAL) */
-/* (A regra .hero-imagem-fundo original pode ser removida ou ignorada) */
-/* ------------------------------------------- */
 
 /* Estiliza o bloco que contém a imagem principal */
 .hero-imagem-principal {
@@ -142,14 +130,11 @@ h1, h2, h3 {
 .hero-imagem-principal img {
     max-width: 80%; /* Limita o tamanho da imagem para caber bem no mobile */
     height: auto;
-    border-radius: 10px; /* Adiciona cantos arredondados se você fez isso no Figma */
+    border-radius: 10px; /* cantos arredondados  */
 }
 
-/* O CTA já está centralizado (text-align: center) e deve estar em baixo */
-
-/* ------------------------------------------- */
 /* ESTILIZAÇÃO DOS DIFERENCIAIS (3 ÍTENS) */
-/* ------------------------------------------- */
+
 .diferenciais {
     padding: 30px 20px;
     text-align: center;
@@ -179,9 +164,7 @@ h1, h2, h3 {
     margin-top: 10px;
 }
 
-/* ------------------------------------------- */
 /* ESTILIZAÇÃO DA SEÇÃO MAIS PEDIDOS!!! */
-/* ------------------------------------------- */
 
 .mais-pedidos {
     padding: 40px 20px;
@@ -212,7 +195,7 @@ h1, h2, h3 {
     width: 100%;
     height: 120px; /* Altura fixa para as miniaturas */
     object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
-    border-radius: 50%; /* Faz a imagem ficar redonda (como na sua imagem de referência) */
+    border-radius: 50%; /* Faz a imagem ficar redonda  */
     margin-bottom: 10px;
 }
 
@@ -230,7 +213,7 @@ h1, h2, h3 {
     color: #FFC107; /* Cor Amarela de Destaque */
 }
 
-/* Estilo para um CTA secundário, se você usá-lo */
+/* Estilo para um CTA secundário */
 .botao-cta-secundario {
     display: inline-block;
     color: #4DD0E1; 
@@ -240,9 +223,7 @@ h1, h2, h3 {
     border-bottom: 2px solid #4DD0E1;
 }
 
-/* ------------------------------------------- */
-/* ESTILIZAÇÃO DO RODAPÉ (FOOTER) */
-/* ------------------------------------------- */
+/* ESTILIZAÇÃO DO FOOTER */
 
 footer {
     background-color: #212121; 
@@ -285,9 +266,7 @@ footer {
     color: #AAAAAA;
 }
 
-/* ------------------------------------------- */
-/* ESTILIZAÇÃO PARA TELAS MAIORES (OPCIONAL) */
-/* ------------------------------------------- */
+/* ESTILIZAÇÃO PARA TELAS MAIORES */
 @media (min-width: 768px) {
     .rodape-conteudo {
         flex-direction: row; 
@@ -296,9 +275,7 @@ footer {
     }
 }
 
-/* ------------------------------------------- */
 /* ESTILIZAÇÃO DO CARDÁPIO (PÁGINA cardapio.html) */
-/* ------------------------------------------- */
 
 .main-cardapio {
     padding: 20px;
@@ -331,7 +308,7 @@ footer {
     display: flex;
     justify-content: space-between; /* Alinha sabor/descrição de um lado e preço do outro */
     align-items: center;
-    border-bottom: 1px dashed #AAAAAA; /* Linha divisória suave */
+    border-bottom: 1px dashed #AAAAAA; /* Linha divisória  */
     padding: 15px 0;
 }
 
@@ -349,7 +326,7 @@ footer {
     font-size: 1em;
 }
 
-/* Ícones de Sabor (Cores baseadas nos sabores que você forneceu) */
+/* Ícones de Sabor  */
 .icone-sabor {
     width: 20px;
     height: 20px;
@@ -402,9 +379,7 @@ footer {
     background-color: #4DD0E1;
 }
 
-/* ------------------------------------------- */
 /* ESTILIZAÇÃO DO CONTATO (PÁGINA contato.html) */
-/* ------------------------------------------- */
 
 .main-contato {
     padding: 20px;
@@ -419,9 +394,8 @@ footer {
     margin: 20px 0 30px;
 }
 
-/* ----------------------- */
 /* CTA WHATSAPP */
-/* ----------------------- */
+
 .contato-cta {
     margin-bottom: 40px;
     padding: 20px;
@@ -457,10 +431,7 @@ footer {
     font-weight: 700;
 }
 
-
-/* ----------------------- */
 /* LOCALIZAÇÃO E MAPA */
-/* ----------------------- */
 .contato-localizacao {
     margin-bottom: 40px;
 }
@@ -491,9 +462,8 @@ footer {
     border-bottom: 1px solid #4DD0E1;
 }
 
-/* ----------------------- */
 /* HORÁRIOS */
-/* ----------------------- */
+
 .contato-horarios {
     padding: 20px;
     background-color: #FFFFFF;
@@ -512,4 +482,29 @@ footer {
 /* Adiciona transição suave para o efeito de zoom do JavaScript */
 .foto-sabor {
     transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+/* BOTÃO VOLTAR AO TOPO (SCROLL-TO-TOP) */
+
+#btnVoltarAoTopo {
+    display: none; /* Inicia escondido */
+    position: fixed; /* Fixa ele na tela */
+    bottom: 20px; /* Distância da parte inferior */
+    right: 20px; /* Distância da lateral direita */
+    z-index: 99; /* Garante que fique acima de outros elementos */
+    
+    background-color: #4DD0E1; /* Cor Turquesa (Destaque) */
+    color: #FFFFFF; /* Texto branco */
+    border: none;
+    border-radius: 50%; /* Formato circular */
+    padding: 10px 15px; /* Ajuste o padding para fazer o círculo */
+    font-size: 1.2em;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+#btnVoltarAoTopo:hover {
+    background-color: #FFC107; /* Amarelo no hover */
 }
