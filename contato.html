@@ -12,19 +12,7 @@
 </head>
 <body>
 
-    <header class="cabecalho">
-        <div class="logo">
-            <img src="img/imagemdindindamarcia.png" alt="Logo Din Din Gourmet da Marcia">
-        </div>
-
-        <nav class="menu-principal">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cardapio.html">Cardápio</a></li>
-                <li><a href="contato.html" class="ativo">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+   <div id="header-container"></div>
 
     <main class="main-contato">
         
@@ -63,27 +51,13 @@
 
     </main>
 
-    <footer>
-        <div class="rodape-conteudo">
-            <div class="rodape-contato">
-                <h3>Fale com a Márcia!</h3>
-                <p>Pedidos e Informações:</p>
-                <a href="contato.html" class="rodape-cta">
-                    <i class="icone-wpp"></i> (12)3 4567-8910
-                </a>
-            </div>
-            <div class="rodape-horarios">
-                <h3>Horário de Funcionamento</h3>
-                <p>Segunda a Sábado:</p>
-                <p>14:00h às 19:00h</p>
-            </div>
-            <div class="rodape-social">
-                <h3>Siga nas Redes</h3>
-                <a href="#" target="_blank">Instagram: @dindindamarcia</a>
-                <p class="copyright">© 2025 Din Din Gourmet da Marcia. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
+    <div id="footer-container"></div>
 
+<script src="js/componentes.js"></script>
+    <script>
+        // Chamadas para carregar os componentes
+        carregarComponente('componentes/header.html', '#header-container');
+        carregarComponente('componentes/footer.html', '#footer-container');
+    </script>
 </body>
 </html>

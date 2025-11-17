@@ -40,3 +40,13 @@ Layout e Usabilidade:
 Foco no WhatsApp:O site é estático, então a conversão é 100% focada no WhatsApp. 
 Layout Mobile-First: O protótipo foi desenhado pensando na tela pequena. Justificativa pra isso: Garante que a Usabilidade e Experiência do Usuário (UX) sejam priorizadas, já que a maioria dos pedidos serão do celular.
  
+ **(Projeto integraddor parte2)**
+ 1. (revisão)
+ BOa parte do projeto já esta funcionando bem, sobre a repetição do HTML, o header e o footer e o botão do whatsapp se repete nas 3 paginas. Sobre a quebra de layout, quando o site éaberto em uma tela menor, a pagina home fica estranha na parte dos mais pedidos(as 3 imagens de demonstração ficam em camadas diferentes), o rodapé fica bem grande tambem, mas acho que não é um problema. Sobre mudanças para melhorar,  acho que eu colocaria um botão de whatsapp também na parte de baixo da tela, para que assim não desapareça nunca da tela do cliente, outra melhoria seria no mapa em (contato.html), não ficou do jeito que eu queria, tambem colocaria imagens para cada din-din na parte do cardapio para que aumente o desjo do comprador
+
+ 2.1 (componentes reutilizáveis)
+o (<header>),(<nav>) e o (<footer>) são idênticos nas 3 páginas do site, a parte dos itens são muito repetidos, a seção de contatos são parecidas com algumas modificações
+
+
+
+
