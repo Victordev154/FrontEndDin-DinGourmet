@@ -47,6 +47,8 @@ Layout Mobile-First: O protótipo foi desenhado pensando na tela pequena. Justif
  2.1 (componentes reutilizáveis)
 o (<header>),(<nav>) e o (<footer>) são idênticos nas 3 páginas do site, a parte dos itens são muito repetidos, a seção de contatos são parecidas com algumas modificações
 
-
+3. (Aprimoramento de Interatividade)
+boteiEfeitos de hover mais elaborados e adcionei um botão de voltar ao topo que pode contribuir ao usuário
+caso ele esteja em um computador fica bem mais simples de ir para o topo da tela!
 
 
