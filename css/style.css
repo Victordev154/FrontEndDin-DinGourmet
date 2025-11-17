@@ -575,3 +575,31 @@ textarea:focus { /* Adicionado textarea para o formulário de Contato */
     outline-offset: 2px;
     border-radius: 5px; 
 }
+
+/* ACESSIBILIDADE: SKIP LINK (PULAR CONTEÚDO) */
+.skip-link {
+    /* Esconde o link tirando da tela para quem não usa teclado */
+    position: absolute;
+    left: -9999px; /* Move o link para fora da tela */
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+
+/* Faz o link aparecer quando ele recebe o foco (após apertar TAB) */
+.skip-link:focus {
+    position: static; /* Traz o link de volta ao fluxo normal da página */
+    width: auto;
+    height: auto;
+    z-index: 9999; /* Garante que ele apareça acima de tudo */
+    
+    /* Estilo para destaque visual */
+    background-color: #FFC107; /* Amarelo de destaque do seu tema */
+    color: #212121;
+    padding: 10px;
+    border: 2px solid #212121;
+    text-align: center;
+    text-decoration: none;
+}
