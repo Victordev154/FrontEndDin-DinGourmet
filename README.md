@@ -51,4 +51,5 @@ o (<header>),(<nav>) e o (<footer>) são idênticos nas 3 páginas do site, a pa
 boteiEfeitos de hover mais elaborados e adcionei um botão de voltar ao topo que pode contribuir ao usuário
 caso ele esteja em um computador fica bem mais simples de ir para o topo da tela!
 
-
+4.2 (Testar Acessibilidade)
+Testei mover pelo site so com o teclado e deu certo, no teste de acessibilidade deu 92/100 , tudo certo ate então
