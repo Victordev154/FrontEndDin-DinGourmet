@@ -7,10 +7,12 @@
 }
 
 body {
-    /* Define as fontes importadas no HTML */
+    /* Define as fontes que importamos no HTML */
     font-family: 'Roboto', sans-serif; 
     line-height: 1.6; 
-    background-color: #F5F5F5; /* Cor de fundo neutra do Figma */
+    background-color: #F5F5F5; /*cor do figma de fundo*/
+    /*  Garante o tamanho legível mínimo */
+    font-size: 16px;
 }
 
 /* Estilo básico para links */
