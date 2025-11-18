@@ -46,21 +46,34 @@ h1, h2, h3 {
 /* ESTILIZAÇÃO DO CABEÇALHO E NAVEGAÇÃO */
 /* ------------------------------------------- */
 
+/* ESTILIZAÇÃO DO CABEÇALHO E NAVEGAÇÃO */
+
 .cabecalho {
     background-color: #FFFFFF; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     padding: 15px 20px;
-    /* Coloca a logo e o menu um embaixo do outro (Mobile) */
+    
+    /* FORÇA O LAYOUT FLEXBOX CENTRALIZADO (MOBILE) */
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column; /* Um embaixo do outro (Logo topo, Menu baixo) */
+    align-items: center;    /* Centraliza horizontalmente */
+    justify-content: center; 
+    width: 100%;            /* Garante que o header ocupe toda a largura */
 }
 
 /* Estilo para a Imagem da Logo */
+.cabecalho .logo {
+    text-align: center; /* Garante que a imagem fique no centro da div */
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;       /* Flex para centralizar a imagem dentro da div */
+    justify-content: center;
+}
+
 .cabecalho .logo img {
     max-width: 120px; 
     height: auto;
-    margin-bottom: 10px; 
+    display: block;     
 }
 
 /* Estilo para o Menu de Navegação */
@@ -71,26 +84,13 @@ h1, h2, h3 {
 
 .menu-principal ul {
     list-style: none;
+    padding: 0;          
+    margin: 0;           
     display: flex; 
-    justify-content: center; 
+    justify-content: center; /* Centraliza os itens do menu */
     gap: 20px; 
+    flex-wrap: wrap;     
 }
-
-/* Estiliza os links do menu */
-.menu-principal a {
-    color: #212121; 
-    padding: 5px 10px;
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-/* Estiliza o link ativo */
-.menu-principal a.ativo {
-    color: #4DD0E1; /* Turquesa de destaque */
-    border-bottom: 2px solid #4DD0E1; 
-}
-
-/* ------------------------------------------- */
 /* ESTILIZAÇÃO DA HERO SECTION (DESTAQUE) */
 /* ------------------------------------------- */
 
