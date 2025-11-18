@@ -1,11 +1,7 @@
-/* =========================================== */
+
 /* RESPONSIVE.CSS */
 /* Gerencia Media Queries para Tablet e Desktop */
-/* =========================================== */
-
-/* ------------------------------------------- */
 /* TABLET (Telas acima de 768px) */
-/* ------------------------------------------- */
 @media (min-width: 768px) {
     
     /* CABEÇALHO: Alinha logo e menu na mesma linha */
@@ -47,10 +43,8 @@
         margin: 0 auto;
     }
 }
-
-/* ------------------------------------------- */
 /* DESKTOP (Telas acima de 1024px) */
-/* ------------------------------------------- */
+
 @media (min-width: 1024px) {
     
     main {
