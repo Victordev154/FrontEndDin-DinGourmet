@@ -122,7 +122,8 @@ h1, h2, h3 {
 .hero-imagem-principal img {
     max-width: 80%; 
     height: auto;
-    border-radius: 10px; 
+    border-radius: 10px;
+    margin: 0 auto; /*  CENTRALIZAR A IMAGEM */
 }
 
 /* Botão CTA Amarelo */
