@@ -17,13 +17,15 @@ aqui p Link do Protótipo Detalhado no Figma:
 https://www.figma.com/design/TSklPc1BNIT9tomcJyHjQX/DinDin-Gourmet-da-Marcia?node-id=0-1&p=f&t=P3PoY5WeD0Q7t1HI-0
 
 
-A estrutura de pastas segue as boas práticas de Front-End para organizar o código, estilos e ativos.
+A estrutura de pastas de Front-End para organizar o código.
 /dindin-gourmet-marcia/
+componentes/
+footer.html , header.html e nav.html
 index.html (Home)
 cardapio.html (Cardápio)
 contato.html (Contato)
 README.md (Documentação)
-css/style.css
+css/style.css e responsive.css
 img (Imagens do produto, logo)
 
 
@@ -56,3 +58,7 @@ Testei mover pelo site so com o teclado e deu certo, no teste de acessibilidade 
 
 5.1. (Revisar Layout em Diferentes Telas)
 testei em várias telas e funcionou bem,nãoficou esteticamente bonito igual em uma tela grande mas em relação a funcionamento  ficou bom.
+
+**PLANO DE MELHORIA/PROXIMOS PASSOS**
+
+ajustar o header,
