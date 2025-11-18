@@ -6,14 +6,17 @@
     <title>Din Din Gourmet da Marcia | Contato</title>
     
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <a href="#conteudoPrincipal" class="skip-link">Pular para o Conteúdo Principal</a>
 
-   <div id="header-container"></div>
+    <div id="header-container"></div>
 
     <main id="conteudoPrincipal" class="main-contato">
         
@@ -27,22 +30,22 @@
                 CLIQUE AQUI PARA REALIZAR SEU PEDIDO!
             </a>
             
-            <p class="telefone">(12)3 456-78910</p>
+            <p class="telefone">(12) 3456-78910</p>
         </section>
 
         <section class="formulario-duvidas">
-    <h2>Dúvidas? Envie uma mensagem!</h2>
-     <form action="#" method="POST" class="formulario-contato">
-        
-        <label for="nomeUsuario">Seu Nome:</label>
-        <input type="text" id="nomeUsuario" name="nomeUsuario" required placeholder="Ex: João Silva">
-        
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" placeholder="Digite sua dúvida ou sugestão."></textarea>
-        
-        <button type="submit" class="botao-enviar">Enviar Dúvida</button>
-     </form>
-    </section>
+            <h2>Dúvidas? Envie uma mensagem!</h2>
+            <form action="#" method="POST" class="formulario-contato">
+                
+                <label for="nomeUsuario">Seu Nome:</label>
+                <input type="text" id="nomeUsuario" name="nomeUsuario" required placeholder="Ex: João Silva">
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua dúvida ou sugestão."></textarea>
+                
+                <button type="submit" class="botao-enviar">Enviar Dúvida</button>
+            </form>
+        </section>
 
         <section class="contato-localizacao">
             <h2 class="titulo-localizacao">Endereço para Retirada</h2>
@@ -50,12 +53,18 @@
             <p class="endereco">CSB 4 lote 4/8 ED SAINT ETIENNE - Taguatinga, Brasília - DF, 72015-535</p>
             
             <div class="bloco-mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15357.654876616428!2d-47.9056254756591!3d-15.82739268688485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3974c8b67167%3A0x67341c3e390623d5!2sAsa%20Sul%2C%20Bras%C3%ADlia%20-%20DF!5e0!3m2!1spt-BR!2sbr!4v1634351323386!5m2!1spt-BR!2sbr" 
-                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.924647924985!2d-48.05797282587899!3d-15.834263623272104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a331093d76705%3A0x449160765765062c!2sTaguatinga%20Sul%20CSB%204%20-%20Taguatinga%2C%20Bras%C3%ADlia%20-%20DF%2C%2072015-535!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
             
-            <a href="URL_GOOGLE_MAPS" target="_blank" class="link-mapa">Abrir no Google Maps</a>
+            <a href="https://goo.gl/maps/SEU_LINK_AQUI" target="_blank" class="link-mapa">Abrir no Google Maps</a>
         </section>
         
         <section class="contato-horarios">
@@ -68,13 +77,23 @@
 
     <div id="footer-container"></div>
 
-<a href="#" id="btnVoltarAoTopo">↑ Topo</a>
-<script src="js/componentes.js"></script>
+    <a href="#" id="btnVoltarAoTopo">↑ Topo</a>
+
+    <script src="js/componentes.js"></script>
     <script>
         // Chamadas para carregar os componentes
         carregarComponente('componentes/header.html', '#header-container');
         carregarComponente('componentes/footer.html', '#footer-container');
     </script>
-    <script src="js/scroll-to-top.js"></script>
+    <script src="js/scroll-to-top.js"></script> <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 </html>

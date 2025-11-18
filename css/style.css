@@ -1,3 +1,7 @@
+/* ------------------------------------------- */
+/* CSS BASE E RESET (Para consistência) */
+/* ------------------------------------------- */
+
 * {
     /* Remove margens e preenchimentos padrão do navegador */
     margin: 0;
@@ -6,13 +10,25 @@
     box-sizing: border-box; 
 }
 
+html {
+    /* Define a base para usar REM (1rem = 10px) */
+    font-size: 62.5%; 
+}
+
 body {
     /* Define as fontes que importamos no HTML */
     font-family: 'Roboto', sans-serif; 
     line-height: 1.6; 
-    background-color: #F5F5F5; /*cor do figma de fundo*/
-    /*  Garante o tamanho legível mínimo */
-    font-size: 16px;
+    background-color: #F5F5F5; /* Cor de fundo neutra */
+    /* Garante o tamanho legível mínimo (16px) */
+    font-size: 1.6rem;
+}
+
+/* REGRA GLOBAL: IMAGENS FLUIDAS */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
 }
 
 /* Estilo básico para links */
@@ -26,14 +42,15 @@ h1, h2, h3 {
     font-family: 'Poppins', sans-serif; 
 }
 
+/* ------------------------------------------- */
 /* ESTILIZAÇÃO DO CABEÇALHO E NAVEGAÇÃO */
+/* ------------------------------------------- */
 
 .cabecalho {
     background-color: #FFFFFF; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     padding: 15px 20px;
-    
-    /*  Coloca a logo e o menu um embaixo do outro e centraliza */
+    /* Coloca a logo e o menu um embaixo do outro (Mobile) */
     display: flex;
     flex-direction: column; 
     align-items: center; 
@@ -43,7 +60,7 @@ h1, h2, h3 {
 .cabecalho .logo img {
     max-width: 120px; 
     height: auto;
-    margin-bottom: 10px; /* Espaço entre a Logo e o Menu */
+    margin-bottom: 10px; 
 }
 
 /* Estilo para o Menu de Navegação */
@@ -55,7 +72,6 @@ h1, h2, h3 {
 .menu-principal ul {
     list-style: none;
     display: flex; 
-   /* Centraliza os links HOME/CARDAPIO/CONTATO */
     justify-content: center; 
     gap: 20px; 
 }
@@ -68,13 +84,15 @@ h1, h2, h3 {
     transition: color 0.3s;
 }
 
-/* Estiliza o link ativo (onde o usuário está) */
+/* Estiliza o link ativo */
 .menu-principal a.ativo {
     color: #4DD0E1; /* Turquesa de destaque */
     border-bottom: 2px solid #4DD0E1; 
 }
 
-/* ESTILIZAÇÃO DA HERO SECTION (DESTAQUE PRINCIPAL) */
+/* ------------------------------------------- */
+/* ESTILIZAÇÃO DA HERO SECTION (DESTAQUE) */
+/* ------------------------------------------- */
 
 .hero {
     display: flex;
@@ -83,17 +101,7 @@ h1, h2, h3 {
     text-align: center;
 }
 
-/* Bloco da Imagem de Fundo (A hero image) */
-.hero-imagem-fundo {
-    width: 100%;
-    height: 300px; /* Altura da imagem no Mobile */
-    background-image: url('../img/dindin-principal.jpg'); 
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 0; /* Remove margem desnecessária, o CTA fica logo abaixo */
-}
-
-/* Conteúdo (Slogan e CTA) que fica embaixo da imagem */
+/* Conteúdo (Slogan e CTA) */
 .hero-conteudo {
     padding: 20px 20px 40px; 
     max-width: 600px;
@@ -103,13 +111,24 @@ h1, h2, h3 {
 .hero-conteudo h1 {
     font-size: 2.2em;
     color: #212121;
-    margin-bottom: 25px; /* Espaço entre o Slogan e o CTA */
+    margin-bottom: 25px; 
 }
 
-/* Botão CTA Amarelo (Chamada para Ação) */
+/* Imagem Principal */
+.hero-imagem-principal {
+    margin: 20px 0; 
+}
+
+.hero-imagem-principal img {
+    max-width: 80%; 
+    height: auto;
+    border-radius: 10px; 
+}
+
+/* Botão CTA Amarelo */
 .botao-cta {
     display: inline-block;
-    background-color: #FFC107; /* Cor Primária do Figma*/
+    background-color: #FFC107; 
     color: #212121;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -119,45 +138,43 @@ h1, h2, h3 {
 }
 
 .botao-cta:hover {
-    background-color: #4DD0E1; /* Efeito de hover */
+    background-color: #4DD0E1; 
 }
 
-/* ESTILIZAÇÃO DA HERO SECTION (DESTAQUE PRINCIPAL) */
+/* ------------------------------------------- */
+/* ESTILIZAÇÃO DAS SEÇÕES (DIFERENCIAIS E PEDIDOS) */
+/* ------------------------------------------- */
 
-/* Estiliza o bloco que contém a imagem principal */
-.hero-imagem-principal {
-    margin: 20px 0; /* Espaço entre o Slogan e o CTA */
-}
-
-.hero-imagem-principal img {
-    max-width: 80%; /* Limita o tamanho da imagem para caber bem no mobile */
-    height: auto;
-    border-radius: 10px; /* cantos arredondados  */
-}
-
-/* ESTILIZAÇÃO DOS DIFERENCIAIS (3 ÍTENS) */
-
-.diferenciais {
+.diferenciais, .mais-pedidos {
     padding: 30px 20px;
     text-align: center;
+}
+
+.diferenciais {
     background-color: #FFFFFF; 
 }
 
-.diferenciais h2 {
-    color: #4DD0E1; /* Turquesa no título da seção */
+.diferenciais h2, .mais-pedidos h2 {
+    color: #212121;
     margin-bottom: 30px;
     font-size: 1.8em;
+    text-transform: uppercase;
 }
 
-.lista-diferenciais {
+.diferenciais h2 {
+    color: #4DD0E1; /* Turquesa no título diferenciais */
+}
+
+.lista-diferenciais, .lista-pedidos {
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-around;
     gap: 20px;
 }
 
-.item-diferencial {
+.item-diferencial, .item-pedido {
     max-width: 180px;
+    text-align: center;
 }
 
 .item-diferencial h3 {
@@ -166,38 +183,12 @@ h1, h2, h3 {
     margin-top: 10px;
 }
 
-/* ESTILIZAÇÃO DA SEÇÃO MAIS PEDIDOS!!! */
-
-.mais-pedidos {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.mais-pedidos h2 {
-    color: #212121;
-    margin-bottom: 30px;
-    font-size: 1.8em;
-    text-transform: uppercase;
-}
-
-.lista-pedidos {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-around;
-    gap: 20px; /* Espaçamento entre os itens */
-    margin-bottom: 30px;
-}
-
-.item-pedido {
-    max-width: 150px;
-    text-align: center;
-}
-
+/* Estilização dos Itens de Pedido (Home) */
 .item-pedido img {
     width: 100%;
-    height: 120px; /* Altura fixa para as miniaturas */
-    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
-    border-radius: 50%; /* Faz a imagem ficar redonda  */
+    height: 120px; 
+    object-fit: cover; 
+    border-radius: 50%; 
     margin-bottom: 10px;
 }
 
@@ -212,10 +203,9 @@ h1, h2, h3 {
 .item-pedido .preco {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    color: #FFC107; /* Cor Amarela de Destaque */
+    color: #FFC107; 
 }
 
-/* Estilo para um CTA secundário */
 .botao-cta-secundario {
     display: inline-block;
     color: #4DD0E1; 
@@ -225,7 +215,9 @@ h1, h2, h3 {
     border-bottom: 2px solid #4DD0E1;
 }
 
-/* ESTILIZAÇÃO DO FOOTER */
+/* ------------------------------------------- */
+/* ESTILIZAÇÃO DO RODAPÉ (FOOTER) */
+/* ------------------------------------------- */
 
 footer {
     background-color: #212121; 
@@ -243,22 +235,20 @@ footer {
 }
 
 .rodape-conteudo h3 {
-    color: #FFC107; /* Destaque em Amarelo para os títulos */
+    color: #FFC107; 
     margin-bottom: 10px;
     font-size: 1.2em;
 }
 
-/* Estilo para o CTA (link de contato) no rodapé */
-.rodape-cta {
-    display: inline-block;
+.rodape-cta, .rodape-social a {
+    display: inline-block; /* ou block */
     color: #4DD0E1; 
     font-weight: 700;
     margin-top: 5px;
 }
 
 .rodape-social a {
-    display: block; 
-    color: #4DD0E1;
+    display: block;
     margin-bottom: 5px;
 }
 
@@ -268,16 +258,9 @@ footer {
     color: #AAAAAA;
 }
 
-/* ESTILIZAÇÃO PARA TELAS MAIORES */
-@media (min-width: 768px) {
-    .rodape-conteudo {
-        flex-direction: row; 
-        justify-content: space-between; 
-        text-align: left;
-    }
-}
-
+/* ------------------------------------------- */
 /* ESTILIZAÇÃO DO CARDÁPIO (PÁGINA cardapio.html) */
+/* ------------------------------------------- */
 
 .main-cardapio {
     padding: 20px;
@@ -287,13 +270,13 @@ footer {
 
 .titulo-pagina-cardapio {
     text-align: center;
-    color: #FFC107; /* Amarelo de destaque */
+    color: #FFC107; 
     font-size: 2.5em;
     margin: 20px 0 40px;
 }
 
 .titulo-categoria {
-    background-color: #FFC107; /* Fundo Amarelo (como o destaque do Figma) */
+    background-color: #FFC107; 
     color: #212121;
     font-family: 'Poppins', sans-serif;
     font-size: 1.4em;
@@ -308,16 +291,16 @@ footer {
 
 .item-cardapio {
     display: flex;
-    justify-content: space-between; /* Alinha sabor/descrição de um lado e preço do outro */
+    justify-content: space-between; 
     align-items: center;
-    border-bottom: 1px dashed #AAAAAA; /* Linha divisória  */
+    border-bottom: 1px dashed #AAAAAA; 
     padding: 15px 0;
 }
 
 .info-sabor {
     display: flex;
     align-items: center;
-    gap: 15px; /* Espaço entre o ícone e o nome */
+    gap: 15px; 
 }
 
 .info-sabor .nome {
@@ -328,25 +311,28 @@ footer {
     font-size: 1em;
 }
 
-/* Ícones de Sabor  */
+.item-cardapio .preco {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #4DD0E1; 
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Ícones de Sabor */
 .icone-sabor {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    border: 3px solid; /* Contorno da bolinha */
-    /* Garante que o ícone é pequeno e visível */
+    border: 3px solid; 
     flex-shrink: 0; 
 }
-
-/* FRUTADOS */
+/* Cores dos Ícones */
 .frutado-morango { border-color: #E91E63; } 
 .frutado-maracuja { border-color: #FFD700; }
 .frutado-coco { border-color: #C2B7A8; }
 .frutado-manga { border-color: #FF8C00; }
 .frutado-abacate { border-color: #6B8E23; }
 .frutado-chocolate { border-color: #8B4513; }
-
-/* ESPECIAIS */
 .especial-frutas-vermelhas { border-color: #B22222; }
 .especial-flocos { border-color: #87CEEB; }
 .especial-ovomaltine { border-color: #964B00; }
@@ -354,19 +340,10 @@ footer {
 .especial-pistache { border-color: #93C572; }
 .especial-nutella { border-color: #5D4037; } 
 
-/* Estilo para o Preço */
-.item-cardapio .preco {
-    font-size: 1.4em;
-    font-weight: 700;
-    color: #4DD0E1; /* Destaque em Turquesa, como no Figma */
-    font-family: 'Poppins', sans-serif;
-}
-
-/* CTA para Pedido no final do Cardápio */
 .botao-cta-cardapio {
     display: block;
     text-align: center;
-    background-color: #FFC107; /* Amarelo de CTA */
+    background-color: #FFC107; 
     color: #212121;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -381,7 +358,9 @@ footer {
     background-color: #4DD0E1;
 }
 
+/* ------------------------------------------- */
 /* ESTILIZAÇÃO DO CONTATO (PÁGINA contato.html) */
+/* ------------------------------------------- */
 
 .main-contato {
     padding: 20px;
@@ -391,17 +370,15 @@ footer {
 }
 
 .titulo-pagina-contato {
-    color: #4DD0E1; /* Turquesa de destaque */
+    color: #4DD0E1; 
     font-size: 2.2em;
     margin: 20px 0 30px;
 }
 
-/* CTA WHATSAPP */
-
 .contato-cta {
     margin-bottom: 40px;
     padding: 20px;
-    border: 2px dashed #FFC107; /* Borda de destaque */
+    border: 2px dashed #FFC107; 
     border-radius: 10px;
 }
 
@@ -410,10 +387,9 @@ footer {
     margin-bottom: 15px;
 }
 
-/* Botão WhatsApp Grande (CTA Principal) */
 .botao-whatsapp {
     display: inline-block;
-    background-color: #FFC107; /* Amarelo de CTA */
+    background-color: #FFC107; 
     color: #212121;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -433,7 +409,6 @@ footer {
     font-weight: 700;
 }
 
-/* LOCALIZAÇÃO E MAPA */
 .contato-localizacao {
     margin-bottom: 40px;
 }
@@ -448,13 +423,11 @@ footer {
 
 .bloco-mapa {
     margin: 20px 0;
-    /* Estilo para simular borda do mapa */
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .bloco-mapa iframe {
-    /* Garante que o mapa dentro do iframe se ajuste ao tamanho do bloco */
     display: block; 
 }
 
@@ -464,55 +437,27 @@ footer {
     border-bottom: 1px solid #4DD0E1;
 }
 
-/* HORÁRIOS */
-
 .contato-horarios {
     padding: 20px;
     background-color: #FFFFFF;
     border-radius: 10px;
 }
+
 .titulo-horarios {
     color: #FFC107;
     font-size: 1.4em;
     margin-bottom: 10px;
 }
+
 .horario-destaque {
     font-size: 1.2em;
     font-weight: 700;
     color: #212121;
 }
-/* Adiciona transição suave para o efeito de zoom do JavaScript */
-.foto-sabor {
-    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
-}
 
-/* BOTÃO VOLTAR AO TOPO (SCROLL-TO-TOP) */
-
-#btnVoltarAoTopo {
-    display: none; /* Inicia escondido */
-    position: fixed; /* Fixa ele na tela */
-    bottom: 20px; /* Distância da parte inferior */
-    right: 20px; /* Distância da lateral direita */
-    z-index: 99; /* Garante que fique acima de outros elementos */
-    
-    background-color: #4DD0E1; /* Cor Turquesa (Destaque) */
-    color: #FFFFFF; /* Texto branco */
-    border: none;
-    border-radius: 50%; /* Formato circular */
-    padding: 10px 15px; /* Ajuste o padding para fazer o círculo */
-    font-size: 1.2em;
-    cursor: pointer;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
-}
-
-#btnVoltarAoTopo:hover {
-    background-color: #FFC107; /* Amarelo no hover */
-}
-
-/* NOVO: FORMULÁRIO DE DÚVIDAS (contato.html) */
-
+/* ------------------------------------------- */
+/* NOVO: FORMULÁRIO DE DÚVIDAS */
+/* ------------------------------------------- */
 .formulario-duvidas {
     padding: 20px;
     margin-bottom: 30px;
@@ -523,12 +468,12 @@ footer {
 
 .formulario-duvidas h2 {
     font-size: 1.4em;
-    color: #FFC107; /* Amarelo de destaque */
+    color: #FFC107; 
     margin-bottom: 20px;
 }
 
 .formulario-contato label {
-    display: block; /* Cada label em uma nova linha */
+    display: block; 
     text-align: left;
     font-weight: 600;
     margin-top: 15px;
@@ -549,11 +494,11 @@ footer {
 
 .formulario-contato textarea {
     height: 100px;
-    resize: vertical; /* Permite redimensionar apenas verticalmente */
+    resize: vertical; 
 }
 
 .botao-enviar {
-    background-color: #4DD0E1; /* Turquesa */
+    background-color: #4DD0E1; 
     color: white;
     font-weight: 700;
     padding: 10px 20px;
@@ -565,24 +510,24 @@ footer {
 }
 
 .botao-enviar:hover {
-    background-color: #FFC107; /* Amarelo no hover */
+    background-color: #FFC107; 
 }
 
-/* Torna o foco visível para acessibilidade (ao navegar com a tecla TAB) */
-a:focus,
-button:focus,
-input:focus,
-textarea:focus { /* Adicionado textarea para o formulário de Contato */
+/* ------------------------------------------- */
+/* ACESSIBILIDADE E INTERAÇÃO */
+/* ------------------------------------------- */
+
+/* Foco visível */
+a:focus, button:focus, input:focus, textarea:focus { 
     outline: 3px solid #4DD0E1; 
     outline-offset: 2px;
     border-radius: 5px; 
 }
 
-/* ACESSIBILIDADE: SKIP LINK (PULAR CONTEÚDO) */
+/* Skip Link */
 .skip-link {
-    /* Esconde o link tirando da tela para quem não usa teclado */
     position: absolute;
-    left: -9999px; /* Move o link para fora da tela */
+    left: -9999px; 
     top: auto;
     width: 1px;
     height: 1px;
@@ -590,18 +535,43 @@ textarea:focus { /* Adicionado textarea para o formulário de Contato */
     z-index: -999;
 }
 
-/* Faz o link aparecer quando ele recebe o foco (após apertar TAB) */
 .skip-link:focus {
-    position: static; /* Traz o link de volta ao fluxo normal da página */
+    position: static; 
     width: auto;
     height: auto;
-    z-index: 9999; /* Garante que ele apareça acima de tudo */
-    
-    /* Estilo para destaque visual */
-    background-color: #FFC107; /* Amarelo de destaque do seu tema */
+    z-index: 9999; 
+    background-color: #FFC107; 
     color: #212121;
     padding: 10px;
     border: 2px solid #212121;
     text-align: center;
     text-decoration: none;
+}
+
+/* Efeito de Zoom (JS) */
+.foto-sabor {
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+/* Botão Voltar ao Topo */
+#btnVoltarAoTopo {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 99; 
+    background-color: #4DD0E1; 
+    color: #FFFFFF; 
+    border: none;
+    border-radius: 50%; 
+    padding: 10px 15px; 
+    font-size: 1.2em;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+#btnVoltarAoTopo:hover {
+    background-color: #FFC107; 
 }
