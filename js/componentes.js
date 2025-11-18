@@ -1,7 +1,7 @@
-// Função para carregar e injetar componentes
+// Função para carregar e injetar componentes de forma assíncrona
 async function carregarComponente(caminho, seletor) {
   try {
-    //  Busca o conteudo do arquivo HTML (header.html ou footer.html)
+    // 1. Busca o conteúdo do arquivo HTML
     const resposta = await fetch(caminho);
     
     // Verifica se a resposta deu certo
@@ -9,15 +9,15 @@ async function carregarComponente(caminho, seletor) {
         throw new Error(`Erro ao carregar componente: ${caminho} (Status: ${resposta.status})`);
     }
     
-    //  Converte a resposta em texto HTML
+    // 2. Converte a resposta em texto HTML
     const html = await resposta.text();
     
-    //  Encontra o local na página e insere o HTML
+    // 3. Encontra o local na página e insere o HTML
     const container = document.querySelector(seletor);
     if (container) {
       container.innerHTML = html;
       
-      //  Chamada de Função Adicional (para ativar a classe 'ativo' no menu)
+      // Se carregou o Header, chama a função para arrumar o menu
       if (seletor === '#header-container') {
           ativarLinkAtivo();
       }
@@ -28,13 +28,21 @@ async function carregarComponente(caminho, seletor) {
   }
 }
 
-// Função para garantir que o link da pagina atual no menu injetado fique azul/ativo
+// Função CORRIGIDA para ativar o link do menu
 function ativarLinkAtivo() {
-    const path = window.location.pathname.split('/').pop() || 'index.html'; 
+    // Pega o nome do arquivo atual (ex: contato.html)
+    let path = window.location.pathname.split('/').pop();
+    
+    // Se o path estiver vazio (raiz do site), considera que é index.html
+    if (path === '') path = 'index.html';
+
     const links = document.querySelectorAll('#header-container a');
     
     links.forEach(link => {
-        // Se o link corresponder ao arquivo atual, adiciona a classe CSS
+        // 1. LIMPEZA: Remove a classe 'ativo' de todos os links primeiro
+        link.classList.remove('ativo');
+        
+        // 2. VERIFICAÇÃO: Se o link for igual ao arquivo atual, adiciona a classe
         if (link.getAttribute('href') === path) {
             link.classList.add('ativo');
         }
