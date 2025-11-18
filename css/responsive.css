@@ -1,0 +1,63 @@
+
+/* RESPONSIVE.CSS */
+/* TABLET (Telas acima de 768px) */
+@media (min-width: 768px) {
+    
+    /* CABEÇALHO: Alinha logo e menu na mesma linha */
+    .cabecalho {
+        flex-direction: row; 
+        justify-content: space-between; 
+        padding: 15px 40px;
+        max-width: 1200px; /* Centraliza o cabeçalho em telas grandes */
+        margin: 0 auto;
+    }
+    
+    .menu-principal {
+        width: auto; 
+        margin-top: 0; /* Remove margem do mobile */
+    }
+
+    /* GRID: Transforma listas em colunas */
+    .lista-pedidos, 
+    .lista-diferenciais {
+        display: grid;
+        /* Cria colunas automáticas */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        gap: 20px;
+        margin: 0 auto 30px;
+        max-width: 900px;
+    }
+    
+    /* RODAPÉ: Organiza em linha */
+    .rodape-conteudo {
+        flex-direction: row; 
+        justify-content: space-around; 
+        text-align: left;
+    }
+
+    /* CONTEÚDO: Limita a largura para leitura */
+    main {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+
+/* DESKTOP (Telas acima de 1024px) */
+@media (min-width: 1024px) {
+    
+    main {
+        max-width: 1200px;
+        padding: 40px 0;
+    }
+
+    /* Aumenta a fonte do título principal */
+    .hero-conteudo h1 {
+        font-size: 3.5rem; 
+    }
+    
+    /* Aumenta o botão CTA */
+    .botao-cta {
+        font-size: 1.8rem;
+        padding: 20px 45px;
+    }
+}
