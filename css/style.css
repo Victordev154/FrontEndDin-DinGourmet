@@ -1,7 +1,5 @@
-/* ------------------------------------------- */
-/* CSS BASE E RESET (Para consistência) */
-/* ------------------------------------------- */
 
+/* CSS BASE E RESET (Para consistência) */
 * {
     /* Remove margens e preenchimentos padrão do navegador */
     margin: 0;
@@ -41,10 +39,6 @@ a {
 h1, h2, h3 {
     font-family: 'Poppins', sans-serif; 
 }
-
-/* ------------------------------------------- */
-/* ESTILIZAÇÃO DO CABEÇALHO E NAVEGAÇÃO */
-/* ------------------------------------------- */
 
 /* ESTILIZAÇÃO DO CABEÇALHO E NAVEGAÇÃO */
 
@@ -92,8 +86,6 @@ h1, h2, h3 {
     flex-wrap: wrap;     
 }
 /* ESTILIZAÇÃO DA HERO SECTION (DESTAQUE) */
-/* ------------------------------------------- */
-
 .hero {
     display: flex;
     flex-direction: column; 
@@ -141,10 +133,7 @@ h1, h2, h3 {
 .botao-cta:hover {
     background-color: #4DD0E1; 
 }
-
-/* ------------------------------------------- */
 /* ESTILIZAÇÃO DAS SEÇÕES (DIFERENCIAIS E PEDIDOS) */
-/* ------------------------------------------- */
 
 .diferenciais, .mais-pedidos {
     padding: 30px 20px;
@@ -216,9 +205,7 @@ h1, h2, h3 {
     border-bottom: 2px solid #4DD0E1;
 }
 
-/* ------------------------------------------- */
 /* ESTILIZAÇÃO DO RODAPÉ (FOOTER) */
-/* ------------------------------------------- */
 
 footer {
     background-color: #212121; 
@@ -258,10 +245,7 @@ footer {
     font-size: 0.8em;
     color: #AAAAAA;
 }
-
-/* ------------------------------------------- */
 /* ESTILIZAÇÃO DO CARDÁPIO (PÁGINA cardapio.html) */
-/* ------------------------------------------- */
 
 .main-cardapio {
     padding: 20px;

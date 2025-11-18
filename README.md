@@ -59,6 +59,28 @@ Testei mover pelo site so com o teclado e deu certo, no teste de acessibilidade 
 5.1. (Revisar Layout em Diferentes Telas)
 testei em várias telas e funcionou bem,nãoficou esteticamente bonito igual em uma tela grande mas em relação a funcionamento  ficou bom.
 
+(MELHORIAS PARTE 2)
+**Quais componentes?**
+    Header Contendo a logo e o menu de navegação principal.
+    Footer Contendo informações de contato, horários e links sociais.
+* **Por que modularizar?**
+    Reutilização: O código é escrito apenas uma vez e depois eu posso usar em todos (`header.html`, `footer.html`) sendo injetado automaticamente em todas as páginas.
+**Organização:** O código das páginas principais (`index.html`, etc.) fica mais limpo e focado apenas no conteúdo específico daquela página.
+
+**Semântica HTML5:** Uso correto de tags como `<header>`, `<main>`, `<nav>` e `<footer>` para leitores de tela.
+**Texto Alternativo (Alt):** Todas as imagens de conteúdo possuem descrições claras no atributo `alt`.
+**Navegação por Teclado:**
+ **Foco Visível:** Implementação de contorno (`outline`) personalizado no CSS para indicar onde o foco está ao usar a tecla `Tab`.
+**Skip Link:** Adição de um link oculto "Pular para o conteúdo principal" para agilizar a navegação.
+**Formulários:** Uso explícito de `<label>` associado aos `inputs` para garantir a leitura correta dos campos.
+
+(Integrações Externas)
+
+
+Formspree: Integração no formulário de contato para envio real de e-mails sem necessidade de servidor.
+Google Maps: adcinoei (`iframe`) do mapa real de localização na página de contato.
+WhatsApp API: Botões de CTA , com links diretos (`wa.me`) que abrem a conversa já com uma mensagem pré-definida.
+
 **PLANO DE MELHORIA/PROXIMOS PASSOS**
 
 ajustar o header,
