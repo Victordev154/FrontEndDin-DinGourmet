@@ -50,7 +50,7 @@ Layout Mobile-First: O protótipo foi desenhado pensando na tela pequena. Justif
 o (<header>),(<nav>) e o (<footer>) são idênticos nas 3 páginas do site, a parte dos itens são muito repetidos, a seção de contatos são parecidas com algumas modificações
 
 3. (Aprimoramento de Interatividade)
-boteiEfeitos de hover mais elaborados e adcionei um botão de voltar ao topo que pode contribuir ao usuário
+botei Efeitos de hover mais elaborados e adcionei um botão de voltar ao topo que pode contribuir ao usuário
 caso ele esteja em um computador fica bem mais simples de ir para o topo da tela!
 
 4.2 (Testar Acessibilidade)
@@ -83,4 +83,4 @@ WhatsApp API: Botões de CTA , com links diretos (`wa.me`) que abrem a conversa 
 
 **PLANO DE MELHORIA/PROXIMOS PASSOS**
 
-ajustar o header,
+ajustar o header, ajustar o mapa,
