@@ -118,4 +118,4 @@ https://victordev154.github.io/FrontEndDin-DinGourmet/
 
 data de publicação : 7/11/2025
 
-Print do Site Din Din Gourmet - (img\Captura de tela 2025-11-22 000014.png)
+Print do Site Din Din Gourmet - (img\Captura-de-tela-2025-11-22-000014.webp)
