@@ -24,13 +24,16 @@ componentes/ aqui uma ´pasta crida para a modulairzação, guardando um html e 
 (footer.html , header.html e nav.html)
 
 css/ aqui ficam a estilização do projeto e o responsive.css os media queries usado para adaptação de telas maiores ou menores
-(style.css e responsive.css)
+(style.css, style.min.css e responsive.css)
+
+docs/ guardar prints do site funcionando em diferentes navegadores
+(testes-navegadores)
 
 img/ aqui armazena os arquivos de foto utilizados no projeto
 (Imagens do produto, logo)
 
 js/ contem a lógica do site, tendo iteratividade para o site
-(componentes.js e scroll-to-top.js)
+(componentes.js, componentes.min.js e scroll-to-top.js)
 
 /(raiz)/ aqui vai aonde o usuario acessa as 3 paginas principais
 (index.html (Home) , cardapio.html (Cardápio) e contato.html (Contato))
@@ -112,10 +115,12 @@ Criação do botão funcional "Voltar ao Topo" e "pular para o conteudo principa
 PARTE3
 
 
-Acesso ao Site com:
+**Acesso ao Site com:**
 
 https://victordev154.github.io/FrontEndDin-DinGourmet/
 
 data de publicação : 7/11/2025
 
 Print do Site Din Din Gourmet - (img\Captura-de-tela-2025-11-22-000014.webp)
+
+Foi adicionado ao projeto o CSS Minifier e o faivicon
