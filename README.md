@@ -19,15 +19,23 @@ https://www.figma.com/design/TSklPc1BNIT9tomcJyHjQX/DinDin-Gourmet-da-Marcia?nod
 
 A estrutura de pastas de Front-End para organizar o código.
 /dindin-gourmet-marcia/
+
 componentes/
 footer.html , header.html e nav.html
+
+css/
+style.css e responsive.css
+
+img/
+(Imagens do produto, logo)
+
+js/
+componentes.js e scroll-to-top.js
+
 index.html (Home)
 cardapio.html (Cardápio)
 contato.html (Contato)
 README.md (Documentação)
-css/style.css e responsive.css
-img (Imagens do produto, logo)
-
 
 Justificativa das cores:
 
