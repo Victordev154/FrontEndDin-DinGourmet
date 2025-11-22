@@ -20,22 +20,22 @@ https://www.figma.com/design/TSklPc1BNIT9tomcJyHjQX/DinDin-Gourmet-da-Marcia?nod
 A estrutura de pastas de Front-End para organizar o código.
 /dindin-gourmet-marcia/
 
-componentes/
-footer.html , header.html e nav.html
+componentes/ aqui uma ´pasta crida para a modulairzação, guardando um html e um body pode apenas injetar no codigo depois de forma limpa e deixando mais organizado e menor o código 
+(footer.html , header.html e nav.html)
 
-css/
-style.css e responsive.css
+css/ aqui ficam a estilização do projeto e o responsive.css os media queries usado para adaptação de telas maiores ou menores
+(style.css e responsive.css)
 
-img/
+img/ aqui armazena os arquivos de foto utilizados no projeto
 (Imagens do produto, logo)
 
-js/
-componentes.js e scroll-to-top.js
+js/ contem a lógica do site, tendo iteratividade para o site
+(componentes.js e scroll-to-top.js)
 
-index.html (Home)
-cardapio.html (Cardápio)
-contato.html (Contato)
-README.md (Documentação)
+/(raiz)/ aqui vai aonde o usuario acessa as 3 paginas principais
+(index.html (Home) , cardapio.html (Cardápio) e contato.html (Contato))
+
+README.md (Documentação) aqui a documentação do meu projeto
 
 Justificativa das cores:
 
@@ -91,4 +91,23 @@ WhatsApp API: Botões de CTA , com links diretos (`wa.me`) que abrem a conversa 
 
 **PLANO DE MELHORIA/PROXIMOS PASSOS**
 
-ajustar o header, ajustar o mapa,
+ajustar o header, ajustar o mapa
+
+
+**Resumo das Três Partes do Projeto**
+PARTE1
+Definição do escopo do negócio ("Din Din Gourmet da Marcia") e seu público-alvo.
+
+Criação do protótipo no Figma, definindo paleta de cores e tipografia.
+
+Codificação do HTML e CSS inicial.
+
+PARTE2
+introdução ao JavaScript e manipulação do DOM.
+
+Implementação de botão de clique (botão que altera o slogan) e de mouse (hover com zoom nas imagens dos dindins).
+
+Criação do botão funcional "Voltar ao Topo" e "pular para o conteudo principal".
+
+PARTE3
+
