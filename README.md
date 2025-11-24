@@ -130,3 +130,21 @@ Foi adicionado ao projeto o CSS Minifier e o faivicon
 foram testados no Google Chrome e no Mozilla firefox
 Foram testados com a resolução do Iphone SE, Iphone 12 pro, ipad, ipad pro, desktop hd, desktop full hd
 Aqui o link da pasta com as prints: C:\Users\victo\OneDrive\Documentos\dindin-gourmet-marcia\docs
+
+**6.1. Reflexão Individual**
+
+
+**Aprendizados Técnicos:**
+
+- Quais foram as principais habilidades técnicas que você desenvolveu? Consegui aprimorar minhas habilidadee de HTML e CSS, entendi  a importância de ter um código limpo e bem organizado, desenvolvi habilidades com o github, e a importancia de ter um README.md em um projeto.
+
+- Qual foi a tecnologia ou conceito mais desafiador de aprender? sem dúvids o javaScript, que foi algo novo que eu tive que implementar nesse projeto
+
+- O que você domina melhor agora comparado ao início do projeto? melhorei muito no HTML em questão de organização , hierarquia. Aprimorei muito na ferramenta do github também.
+
+
+**Desafios Enfrentados:**
+
+- Qual foi o maior desafio do projeto? mnter a organização dos códigos e das pastas, porque eram muitas, implementar javaScript, aprender a dominar o github
+
+- Se pudesse voltar no tempo, o que faria diferente? Comentaria desde o início cada trecho de código, facilitando meu entendimento depois.
