@@ -18,7 +18,7 @@ https://www.figma.com/design/TSklPc1BNIT9tomcJyHjQX/DinDin-Gourmet-da-Marcia?nod
 
 
 A estrutura de pastas de Front-End para organizar o código.
-/dindin-gourmet-marcia/
+/dindin-gourmet-marcia/ psta principal
 
 componentes/ aqui uma ´pasta crida para a modulairzação, guardando um html e um body pode apenas injetar no codigo depois de forma limpa e deixando mais organizado e menor o código 
 (footer.html , header.html e nav.html)
@@ -124,3 +124,9 @@ data de publicação : 7/11/2025
 Print do Site Din Din Gourmet - (img\Captura-de-tela-2025-11-22-000014.webp)
 
 Foi adicionado ao projeto o CSS Minifier e o faivicon
+
+**Testes Realizados**
+
+foram testados no Google Chrome e no Mozilla firefox
+Foram testados com a resolução do Iphone SE, Iphone 12 pro, ipad, ipad pro, desktop hd, desktop full hd
+Aqui o link da pasta com as prints: C:\Users\victo\OneDrive\Documentos\dindin-gourmet-marcia\docs
