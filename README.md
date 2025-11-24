@@ -113,6 +113,9 @@ Implementação de botão de clique (botão que altera o slogan) e de mouse (hov
 Criação do botão funcional "Voltar ao Topo" e "pular para o conteudo principal".
 
 PARTE3
+Focou em modularização e responsividade avançada, componentes.js, compontes para manter o código limpo, separando o header e o footer
+
+acessibilidade usando skip link e Vlibras , adição do favicon...
 
 
 **Acesso ao Site com:**
@@ -148,3 +151,22 @@ Aqui o link da pasta com as prints: C:\Users\victo\OneDrive\Documentos\dindin-go
 - Qual foi o maior desafio do projeto? mnter a organização dos códigos e das pastas, porque eram muitas, implementar javaScript, aprender a dominar o github
 
 - Se pudesse voltar no tempo, o que faria diferente? Comentaria desde o início cada trecho de código, facilitando meu entendimento depois.
+
+**6.2. Reflexão da dupla(fiz sozinho)**
+
+o projeto evoluiu  bastante desde a parte  1 , tendo em vista que foi aplicado JS, melhores mudanças feitas foi no meu head que estava desorganizado e diferente entre as 3 paginas, usando componentes ficou muito mais fácil de organizar e mexer no código, ajudou muito. Na minha cabeça meu projeto atendeu o que foi esperado. 
+Com os feedbacks, consegui ter uma outra visão ,uma outra persepção do que foi feito no meu projeto, então consegui ter uma outra opinião sobre o que eu tinha feito, a principio foram mais elogios do que críticas, acredito que em projetos futuros consigo aplicar essas dicas/críticas 
+Acredito que é um site bem estrutura e agregaria em um comércio pequeno, diria que seria um apoio enorme ao vendedor. Usaria esse projeto de portifolio não só por ser meu primeiro, mas porque mostra minha evolução e funções que eu aprendi
+
+**Próximos Passos e Melhorias Futuras**
+
+Implementar um carrinho de compras seria algo  útil e legal
+modo escuro também seria interessante 
+frameworks
+
+conhecimento e aprofundar:
+
+animações CSS
+manipular API's
+frmeworks modernos
+entender melhor wcag
